@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Measure Plugin</title>
+
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
+
+<style>
+	body {
+		background: #f9f9f9;
+		color: #333;
+		-webkit-font-smoothing: antialiased;
+		font-size: 18px;
+		line-height: 1.7em;
+		font-family: 'Merriweather', serif;
+	}
+
+	article {
+		width: 620px;
+		margin: 50px auto;
+	}
+
+	article.badMeasure {
+		width: 1200px;
+	}
+
+	a {
+		color: #333;
+		text-decoration: none;
+		border-bottom: solid 1px #ddd;
+	}
+
+	a:hover {
+		color: #125d87;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<article>
+
+<a href="#" id="toggleMeasure">Show Bad Measure</a> <br>
+<a href="#">View on Github</a> <br>
+<a href="mattanddesign.com">Visit my website</a>
+
+<h1>Measure.js</h1>
+	<p>The measure is the length of a line of text, or more plainly the amount of characters per line. Good measure is all about providing good rhythm to an article so when you read, you're not having to stop and start where you shouldn't be. You may have noticed bad measure where there was just way too many words on each line line, making you to search for each new line.</p>
+
+	<p>We aim to have each dark section flow from one line to another, effectively creating a dark column on the left and right sides of the text. Try the link above toggle between good and bad measure. You should notice good measure is easier to read particularly for longer periods of time.</p>
+
+	<p>From this point on it's just rambling to show the demo in action. It's been borrowed from <a href="http://en.wikipedia.org/wiki/Typography">Wikipedia</a>. <a href="/wiki/Legibility" title="Legibility">Legibility</a> is primarily the concern of the typeface designer, to ensure that each individual character or glyph is unambiguous and distinguishable from all other characters in the font. Legibility is also in part the concern of the typographer to select a typeface with appropriate clarity of design for the intended use at the intended size. An example of a well-known design, <a href="/wiki/Brush_Script" title="Brush Script">Brush Script</a>, contains a number of illegible letters since many of the characters can be easily misread especially if seen out of textual context.</p>
+
+	<p><a href="/wiki/Readability" title="Readability">Readability</a> is primarily the concern of the typographer or information designer. It is the intended result of the complete process of presentation of textual material in order to communicate meaning as unambiguously as possible. A reader should be assisted in navigating around the information with ease, by optimal inter-letter, inter-word and particularly inter-line spacing, coupled with appropriate line length and position on the page, careful editorial “chunking” and choice of the text architecture of titles, folios, and reference links.</p>
+</article>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="scripts.js"></script>
+<script>
+	$('article').measure();
+</script>
+
+<script>
+	$('#toggleMeasure').on('click', function(e) {
+		e.preventDefault();
+		$('article').toggleClass('badMeasure');
+
+		var $btn = $('#toggleMeasure');
+
+		if($btn.text() == 'Show Bad Measure') {
+			$btn.text('Show Good Measure');
+        } else {
+			$btn.text('Show Bad Measure');
+		}
+	})
+</script>
+
+</body>
+</html>
