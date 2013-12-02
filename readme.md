@@ -1,6 +1,6 @@
 # Measure.js
 
-Measure.js helps to make your web typography a more legible, and therefore more likely to be read.
+Measure.js helps to make your web typography more legible, and therefore more likely to be read.
 
 ### Huh, measure?
 
