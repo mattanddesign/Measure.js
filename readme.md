@@ -1,6 +1,6 @@
 # Measure.js
 
-Usually when we write something it's so someone can read it. Measure.js helps to make your web typography a more legible, and therefore more likely to be read.
+Measure.js helps to make your web typography a more legible, and therefore more likely to be read.
 
 ### Huh, measure?
 
@@ -26,7 +26,7 @@ To get up and running with Measure.js you must be using jQuery and be linking to
 		$('article').measure();
 	</script>
 
-As default it will highlight the first 3 paragraphs, allowing you to then update your css accordingly. The aim is to have each dark sections flow from one line to another, effectively creating a dark column on the left and right sides of the text.
+As default it will highlight the first 3 paragraphs, allowing you to then update your css accordingly. The aim is to have each dark section flow from one line to another, effectively creating a dark column on the left and right sides of the text.
 
 ### Info and Options 
 
@@ -40,7 +40,7 @@ Most fonts have characters with variable widths meaning the perfect measure can'
 
 **paragraphCount** *Default 3*
 
-Turns out it's a rather intensive process, I've found that limiting it to 3 paragraphs works is quick whilst providing a good indication of the measure. This can be adjusted accordingly depending on if speed or accuracy is more important. Make sure to disable the plugin before pushing these changes to live, so you don't pass on the peformance hit. 
+Turns out it's a rather intensive process, I've found that limiting to 3 paragraphs works quick whilst providing a good indication of the overall measure. This can be adjusted accordingly depending on if speed or accuracy is more important. Make sure to disable the plugin before pushing these changes to live, so you don't pass on the peformance hit. 
 
 To adjust these values replace the block of code above with the following:
 
