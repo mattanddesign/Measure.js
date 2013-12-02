@@ -2,6 +2,8 @@
 
 Measure.js helps to make your web typography more legible, and therefore more likely to be read.
 
+[Demo](http://mattanddesign.com/measure)
+
 ### Huh, measure?
 
 The measure is the length of a line of text, or more plainly the amount of characters per line.
