@@ -22,7 +22,7 @@ As a general rule of thumb a comfortable measure is 55-75 characters per line, w
 
 Measure.js is intended for development use only. Of course, keep it around if you plan on updating the size or fonts later. They affect the measure (more than you would think).
 
-To get up and running with Measure.js you must be using jQuery and be linking to the measure.js file. Then add the following block of code just below the closing body tag:
+To get up and running with Measure.js you must be using jQuery and be linking to the measure.js file. Then add the following block of code just before the closing body tag:
 
 	<script>
 		$('article').measure();
